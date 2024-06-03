@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{font-family: "Nunito", sans-serif; scroll-behavior: smooth;}
+body{overflow-x: hidden;}
+#Home{background:url(./resources/hero-services-img.webp) no-repeat bottom/30%;}
+@media screen and (max-width:1536px) {
+    #Home{
+        background-size: 40%;
+        background-position: 50% 120%;
+    }
+}
+@media screen and (max-width:1280px) {
+    #Home{
+        background-size: 50%;
+        background-position: 50% 120%;
+    }
+}
+@media screen and (max-width:1024px) {
+    #Home{
+        background-size: 60%;
+        background-position: 50% 110%;
+    }
+}
+@media screen and (max-width:768px) {
+    #Home{
+        background-size: 70%;
+        background-position: 50% 100%;
+    }
+}
+@media screen and (max-width:640px) {
+    #Home{
+        background-size: 80%;
+        background-position: 50% 90%;
+    }
+}
+@media screen and (max-height:800px) {
+    #Home{
+        background-size: 20%;
+        background-position: 50% 110%;
+    }
+}
+.zoom1{animation: zoom1 .3s forwards;}@keyframes zoom1{
+    from{height: 0;}
+    to{height: 90%;}
+}
+#Home::before{content:'';background:url(./resources/hero-bg-light.webp) no-repeat center/cover;}
+#sub-btn::after{content:'Subscribe';display: flex;justify-content: center;align-items: center;font-size: 1.2rem;font-weight: 600;}
